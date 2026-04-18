@@ -152,12 +152,12 @@ export default function Home() {
                 <Calendar size={18} className="text-black" />
                 Contactar
               </a>
-              <a 
-                href="/cv" 
+              <Link 
+                to="/cv" 
                 className="liquid-glass px-[36px] py-[14px] rounded-[9999px] font-semibold flex items-center justify-center hover:scale-105 transition-transform text-white"
               >
                 Mi trayectoria
-              </a>
+              </Link>
             </div>
           </div>
         </section>
