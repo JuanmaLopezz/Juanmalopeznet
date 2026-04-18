@@ -430,7 +430,7 @@ export default function Home() {
                     Agendar reunión
                   </a>
                   <a 
-                    href="https://wa.me/34600000000" 
+                    href="https://wa.me/34657372039" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full min-[450px]:w-[270px] flex items-center justify-center gap-3 liquid-glass !bg-[#25D366]/10 !border-[#25D366]/30 rounded-full font-medium py-3.5 sm:py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
