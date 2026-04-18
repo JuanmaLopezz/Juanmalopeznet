@@ -108,12 +108,12 @@ export default function Home() {
       <div 
         ref={scrollContainerRef}
         onScroll={handleScroll}
-        className="relative z-10 w-full h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth" 
+        className="relative z-10 w-full h-screen overflow-y-auto lg:snap-y lg:snap-mandatory scroll-smooth" 
         style={{ scrollbarWidth: 'none' }}
       >
         
         {/* HERO SECTION */}
-        <section id="hero" className="w-full h-screen snap-start relative flex flex-col justify-end px-4 lg:px-[60px] pb-4 lg:pb-6 pt-24">
+        <section id="hero" className="w-full h-screen lg:snap-start relative flex flex-col justify-end px-4 lg:px-[60px] pb-4 lg:pb-6 pt-24">
           <div className="flex flex-col lg:flex-row justify-between lg:items-end w-full gap-6">
             <div className="max-w-[800px] w-full">
               <div className="flex flex-wrap items-center gap-[20px] mb-[24px] text-[11px] uppercase tracking-[0.2em] text-[#a1a1aa] animate-blur-fade-up" style={{ animationDelay: '300ms' }}>
@@ -162,7 +162,7 @@ export default function Home() {
         </section>
 
         {/* SECTION: EL PROBLEMA */}
-        <section id="problema" className="w-full min-h-[100dvh] lg:h-[100dvh] snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
+        <section id="problema" className="w-full min-h-[100dvh] lg:h-[100dvh] lg:snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -246,7 +246,7 @@ export default function Home() {
         </section>
 
         {/* SECTION: LA SOLUCION */}
-        <section id="solucion" className="w-full min-h-[100dvh] lg:h-[100dvh] snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
+        <section id="solucion" className="w-full min-h-[100dvh] lg:h-[100dvh] lg:snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -347,44 +347,44 @@ export default function Home() {
         </section>
 
         {/* SECTION: QUIEN SOY */}
-        <section id="quien-soy" className="w-full min-h-[100dvh] lg:h-[100dvh] snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
+        <section id="quien-soy" className="w-full min-h-[100dvh] lg:h-[100dvh] lg:snap-start flex items-start lg:items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-12 lg:py-0">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col lg:grid lg:grid-cols-3 gap-4 lg:gap-6 h-auto lg:h-[65vh] xl:h-[70vh] max-h-none lg:max-h-[850px]"
+            className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col lg:grid lg:grid-cols-3 gap-4 lg:gap-6 h-auto lg:min-h-[60vh] xl:min-h-[65vh] xl:max-h-[85vh]"
           >
             {/* Left Card (Photo) */}
-            <div className="w-full lg:w-auto h-[400px] lg:h-full lg:col-span-1 liquid-glass rounded-[24px] overflow-hidden relative">
+            <div className="w-full lg:w-auto h-[400px] lg:h-full lg:min-h-[400px] lg:col-span-1 liquid-glass rounded-[24px] overflow-hidden relative">
               <img 
                 src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_39uAMRdXtyPD0i1Kbmj8YAvTY0y%2Fhf_20260418_173048_8cfa5b41-6c15-4c72-8092-217aa9f2dd7d.png&w=1280&q=85" 
                 alt="Juanma López"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover object-[50%_15%]"
+                className="absolute w-full h-full object-cover object-[50%_15%]"
               />
             </div>
 
             {/* Right Card (Text) */}
-            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] p-8 lg:p-12 flex flex-col justify-center items-center text-center">
+            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] p-8 lg:px-12 lg:py-10 flex flex-col justify-center items-center text-center">
               <h3 className="text-3xl sm:text-4xl xl:text-5xl font-medium mb-6">Soy Juanma López.</h3>
               
-              <p className="text-[#a1a1aa] text-base lg:text-lg xl:text-xl leading-relaxed w-full mb-4">
+              <p className="text-[#a1a1aa] text-base lg:text-[17px] xl:text-lg leading-relaxed w-full mb-4">
                 Llevo una década trabajando en tecnología — desarrollo de software, consultoría IT, gestión de proyectos. El tipo de trabajo que no se ve pero que hace que las cosas funcionen solas. A lo largo de mi carrera, he comprobado que el mayor recurso de cualquier profesional no es el capital, sino su tiempo.
               </p>
               
-              <p className="text-[#a1a1aa] text-base lg:text-lg xl:text-xl leading-relaxed w-full mb-4">
+              <p className="text-[#a1a1aa] text-base lg:text-[17px] xl:text-lg leading-relaxed w-full mb-4">
                 Esas herramientas que usan las empresas grandes para no perder tiempo ni dinero también están al alcance de un negocio pequeño. <strong className="text-white font-medium">La diferencia es que alguien tiene que entender la tecnología y, a la vez, entender cómo funciona un negocio local. Yo soy ese alguien.</strong>
               </p>
 
-              <p className="text-[#a1a1aa] text-base lg:text-lg xl:text-xl leading-relaxed w-full mb-4">
+              <p className="text-[#a1a1aa] text-base lg:text-[17px] xl:text-lg leading-relaxed w-full mb-4">
                 Mi objetivo no es instalarte software genérico y desaparecer. Mi meta es auditar tus procesos, detectar cuellos de botella y diseñar un ecosistema en piloto automático que trabaje para ti 24/7.
               </p>
               
-              <p className="text-[#a1a1aa] text-base lg:text-lg xl:text-xl leading-relaxed w-full">
+              <p className="text-[#a1a1aa] text-base lg:text-[17px] xl:text-lg leading-relaxed w-full">
                 Si algo de lo que has leído te cuadra, escríbeme y me cuentas cómo tienes tu negocio. Sin compromiso, miramos juntos qué piezas podemos automatizar hoy mismo.
               </p>
 
-              <a href="/cv" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-black font-medium hover:scale-105 transition-transform w-[max-content] mt-8 lg:mt-10">
+              <a href="/cv" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-white text-black font-medium hover:scale-105 transition-transform w-[max-content] mt-6 lg:mt-8">
                 Leer mi trayectoria completa <Play size={16} fill="black" />
               </a>
             </div>
@@ -392,53 +392,72 @@ export default function Home() {
         </section>
 
         {/* SECTION: HABLEMOS */}
-        <section id="hablemos" className="w-full min-h-[100dvh] snap-start flex flex-col items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-8">
+        <section id="hablemos" className="w-full min-h-[100dvh] lg:h-[100dvh] lg:snap-start flex flex-col items-center justify-center px-4 sm:px-12 relative pointer-events-auto pt-24 pb-8 lg:pt-28 lg:pb-12">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="w-full max-w-4xl xl:max-w-5xl 2xl:max-w-6xl flex flex-col gap-6 flex-1 justify-center items-center"
+            className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col gap-4 lg:gap-6 flex-1 lg:flex-none justify-center"
           >
-            <div className="w-full liquid-glass rounded-[32px] p-8 sm:p-12 text-center flex flex-col items-center">
-              <h3 className="text-3xl sm:text-5xl font-medium mb-10 w-full">Empieza tu transformación.</h3>
+            {/* Top Area: Splitted Desktop */}
+            <div className="w-full flex flex-col lg:grid lg:grid-cols-[4fr_6fr] xl:grid-cols-[3.5fr_6.5fr] gap-4 lg:gap-6">
               
-              <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 lg:gap-6 w-full max-w-5xl mx-auto">
-                <a 
-                  href="https://calendly.com/juanmalopezz/15min" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-full md:w-[270px] flex items-center justify-center gap-3 bg-white text-black rounded-full font-medium py-4 hover:scale-105 transition-transform text-center shrink-0"
+              {/* Left Card: Video */}
+              <div className="w-full h-[300px] sm:h-[350px] lg:h-auto liquid-glass rounded-[24px] lg:rounded-[32px] overflow-hidden relative border border-white/10">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  className="absolute inset-0 w-full h-full object-cover"
                 >
-                  <Calendar className="w-5 h-5 shrink-0" />
-                  Agendar reunión
-                </a>
-                <a 
-                  href="https://wa.me/34600000000" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full md:w-[270px] flex items-center justify-center gap-3 liquid-glass !bg-[#25D366]/10 !border-[#25D366]/30 rounded-full font-medium py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
-                >
-                  <WhatsappIcon className="w-5 h-5 shrink-0" />
-                  Escríbeme por Whatsapp
-                </a>
-                <a 
-                  href="mailto:hola@juanmalopez.net" 
-                  className="w-full md:w-[270px] flex items-center justify-center gap-3 liquid-glass rounded-full font-medium py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
-                >
-                  <Mail className="w-5 h-5 shrink-0" />
-                  Contacta por correo
-                </a>
+                  <source src="https://d8j0ntlcm91z4.cloudfront.net/user_39uAMRdXtyPD0i1Kbmj8YAvTY0y/hf_20260418_183022_75111356-1725-4629-97c6-4fa8054b3454.mp4" type="video/mp4" />
+                </video>
               </div>
-              
-              <div className="mt-10 lg:mt-12 pt-8 border-t border-white/10 w-full">
-                <p className="text-sm lg:text-base text-[#a1a1aa] max-w-2xl mx-auto leading-relaxed">
-                  Contacta conmigo a través de cualquier método disponible y descubriremos cómo podemos ahorrarte tiempo e impulsar tu productividad de manera medible.
-                </p>
+
+              {/* Right Card: Contact Form */}
+              <div className="w-full liquid-glass rounded-[24px] lg:rounded-[32px] p-6 sm:p-10 lg:p-8 xl:p-12 text-center flex flex-col items-center justify-center">
+                <h3 className="text-3xl lg:text-4xl xl:text-[40px] font-medium mb-6 sm:mb-8 w-full xl:leading-tight">Empieza tu transformación.</h3>
+                
+                <div className="flex flex-col min-[450px]:flex-row flex-wrap justify-center items-center gap-4 lg:gap-6 w-full max-w-[600px] mx-auto">
+                  <a 
+                    href="https://calendly.com/juanmalopezz/15min" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full min-[450px]:w-[270px] flex items-center justify-center gap-3 bg-white text-black rounded-full font-medium py-3.5 sm:py-4 hover:scale-105 transition-transform text-center shrink-0"
+                  >
+                    <Calendar className="w-5 h-5 shrink-0" />
+                    Agendar reunión
+                  </a>
+                  <a 
+                    href="https://wa.me/34600000000" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full min-[450px]:w-[270px] flex items-center justify-center gap-3 liquid-glass !bg-[#25D366]/10 !border-[#25D366]/30 rounded-full font-medium py-3.5 sm:py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
+                  >
+                    <WhatsappIcon className="w-5 h-5 shrink-0" />
+                    Escríbeme por Whatsapp
+                  </a>
+                  <a 
+                    href="mailto:juanmalopez9@gmail.com" 
+                    className="w-full min-[450px]:w-[270px] flex items-center justify-center gap-3 liquid-glass rounded-full font-medium py-3.5 sm:py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
+                  >
+                    <Mail className="w-5 h-5 shrink-0" />
+                    Contacta por correo
+                  </a>
+                </div>
+                
+                <div className="mt-8 lg:mt-10 pt-6 border-t border-white/10 w-full">
+                  <p className="text-sm lg:text-base text-[#a1a1aa] max-w-xl mx-auto leading-relaxed">
+                    Contacta conmigo a través de cualquier método disponible y descubriremos cómo podemos ahorrarte tiempo e impulsar tu productividad de manera medible.
+                  </p>
+                </div>
               </div>
+
             </div>
 
             {/* KIT DIGITAL */}
-            <div className="w-full max-w-4xl xl:max-w-5xl liquid-glass rounded-[24px] p-6 lg:p-8 text-center mt-2">
+            <div className="w-full liquid-glass rounded-[24px] p-6 lg:p-8 text-center mt-2 lg:mt-0">
               <p className="text-[#a1a1aa] text-sm lg:text-base leading-relaxed">
                 <strong className="text-amber-400 font-medium tracking-wide">Kit Digital:</strong> Si tienes entre 0 y 49 empleados, puede que parte de esto lo cubra el Kit Digital — pregúntame y te cuento sin rodeos.
               </p>
@@ -446,7 +465,7 @@ export default function Home() {
           </motion.div>
 
           {/* FOOTER */}
-          <div className="w-full max-w-7xl mt-24 pt-8 pb-4 text-center border-t border-white/10 shrink-0">
+          <div className="w-full max-w-7xl mt-16 pt-8 pb-4 text-center border-t border-white/10 shrink-0">
             <p className="text-sm text-[#a1a1aa]">© 2026 Juanma López · juanmalopez.net</p>
           </div>
         </section>
