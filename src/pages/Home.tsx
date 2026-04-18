@@ -384,7 +384,7 @@ export default function Home() {
                 Si algo de lo que has leído te cuadra, escríbeme y me cuentas cómo tienes tu negocio. Sin compromiso, miramos juntos qué piezas podemos automatizar hoy mismo.
               </p>
 
-              <a href="/cv" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-white text-black font-medium hover:scale-105 transition-transform w-[max-content] mt-6 lg:mt-8">
+              <Link to="/cv" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-white text-black font-medium hover:scale-105 transition-transform w-[max-content] mt-6 lg:mt-8">
                 Leer mi trayectoria completa <Play size={16} fill="black" />
               </a>
             </div>
