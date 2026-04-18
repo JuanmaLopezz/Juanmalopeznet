@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Play, Calendar, Star, Clock, Settings, Euro, TrendingUp, MessageCircle, Wrench, CheckCircle, Mail, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const phrases = ["mientras duermes", "sin que tú hagas nada", "mientras atiendes clientes"];
 
@@ -386,7 +387,7 @@ export default function Home() {
 
               <Link to="/cv" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-white text-black font-medium hover:scale-105 transition-transform w-[max-content] mt-6 lg:mt-8">
                 Leer mi trayectoria completa <Play size={16} fill="black" />
-              </a>
+              </Link>
             </div>
           </motion.div>
         </section>
