@@ -50,7 +50,7 @@ export default function Home() {
           playsInline 
           className="w-full h-full object-cover -translate-y-[8vh] lg:-translate-y-[15vh]"
         >
-          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_39uAMRdXtyPD0i1Kbmj8YAvTY0y/hf_20260418_155154_e4c21097-d55d-47ff-9b9e-fb9dd1c4216c.mp4" type="video/mp4" />
+          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_39uAMRdXtyPD0i1Kbmj8YAvTY0y/hf_20260418_144332_8b652aa3-fe68-4e77-b831-56687636fa38.mp4" type="video/mp4" />
         </video>
         
         {/* Cinematic Bars (Inward Gradient) */}
