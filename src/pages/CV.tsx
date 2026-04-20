@@ -119,7 +119,7 @@ export default function CV() {
           <div className="space-y-12">
             
             {/* TECNOLOGIAS */}
-            <section className="liquid-glass rounded-[24px] p-6 sm:p-8">
+            <section className="liquid-glass rounded-[24px] card-hover p-6 sm:p-8">
               <h3 className="flex items-center gap-3 text-xl font-medium mb-6">
                 <Code size={20} className="text-white" /> Stack Tecnológico
               </h3>
