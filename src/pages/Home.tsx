@@ -171,7 +171,7 @@ export default function Home() {
             className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col lg:grid lg:grid-cols-4 gap-4 lg:gap-6"
           >
             {/* Top Card (Full width but smaller) */}
-            <div className="w-full lg:w-auto lg:col-span-4 liquid-glass rounded-[24px] p-6 lg:p-10 flex flex-col items-center justify-center text-center">
+            <div className="w-full lg:w-auto lg:col-span-4 liquid-glass rounded-[24px] card-hover p-6 lg:p-10 flex flex-col items-center justify-center text-center">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-[1.2] max-w-2xl mb-4">
                 El día a día de un negocio es abrumador.
               </h3>
@@ -181,7 +181,7 @@ export default function Home() {
             </div>
 
             {/* Left Card (Video) */}
-            <div className="w-full lg:w-auto lg:col-span-1 liquid-glass rounded-[24px] overflow-hidden flex flex-col relative h-[300px] sm:h-[400px] lg:h-auto min-h-[300px]">
+            <div className="w-full lg:w-auto lg:col-span-1 liquid-glass rounded-[24px] card-hover overflow-hidden flex flex-col relative h-[300px] sm:h-[400px] lg:h-auto min-h-[300px]">
               <video 
                 autoPlay 
                 loop 
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
 
             {/* Center Card (Big Text) */}
-            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] p-8 lg:p-10 flex flex-col justify-center">
+            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] card-hover p-8 lg:p-10 flex flex-col justify-center">
               <div className="flex items-start lg:items-center gap-4 mb-6">
                 <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                   <Clock size={20} className="text-white" />
@@ -212,7 +212,7 @@ export default function Home() {
             {/* Right Cards (3 small stats) */}
             <div className="w-full lg:w-auto lg:col-span-1 flex flex-col gap-4">
               
-              <div className="liquid-glass rounded-[24px] p-6 flex flex-col justify-center flex-1">
+              <div className="liquid-glass rounded-[24px] card-hover p-6 flex flex-col justify-center flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                     <Settings size={18} className="text-white" />
@@ -222,7 +222,7 @@ export default function Home() {
                 <p className="text-sm text-[#a1a1aa] leading-snug">de tareas repetitivas se pueden automatizar.</p>
               </div>
 
-              <div className="liquid-glass rounded-[24px] p-6 flex flex-col justify-center flex-1">
+              <div className="liquid-glass rounded-[24px] card-hover p-6 flex flex-col justify-center flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                     <Euro size={18} className="text-white" />
@@ -232,7 +232,7 @@ export default function Home() {
                 <p className="text-sm text-[#a1a1aa] leading-snug">de media al mes se pierden en tareas manuales.</p>
               </div>
 
-              <div className="liquid-glass rounded-[24px] p-6 flex flex-col justify-center flex-1">
+              <div className="liquid-glass rounded-[24px] card-hover p-6 flex flex-col justify-center flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                     <TrendingUp size={18} className="text-white" />
@@ -255,7 +255,7 @@ export default function Home() {
             className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-6"
           >
             {/* Top Card */}
-            <div className="w-full lg:w-auto lg:col-span-4 lg:row-span-1 lg:col-start-1 lg:row-start-1 liquid-glass rounded-[24px] p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+            <div className="w-full lg:w-auto lg:col-span-4 lg:row-span-1 lg:col-start-1 lg:row-start-1 liquid-glass rounded-[24px] card-hover p-6 lg:p-8 flex flex-col items-center justify-center text-center">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-[1.2] max-w-none w-full mb-6 lg:mb-8">
                 Inteligencia Artificial aplicada a tu realidad.
               </h3>
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
 
             {/* Left Card (Paso 1) */}
-            <div className="w-full lg:w-auto lg:col-span-1 lg:row-span-2 lg:col-start-1 lg:row-start-2 liquid-glass rounded-[24px] p-8 lg:p-10 flex flex-col justify-center">
+            <div className="w-full lg:w-auto lg:col-span-1 lg:row-span-2 lg:col-start-1 lg:row-start-2 liquid-glass rounded-[24px] card-hover p-8 lg:p-10 flex flex-col justify-center">
               <div className="flex items-start lg:items-center gap-4 mb-6">
                 <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                   <MessageCircle size={20} className="text-white" />
@@ -307,7 +307,7 @@ export default function Home() {
             </div>
 
             {/* Center Top (Paso 2) */}
-            <div className="w-full lg:w-auto lg:col-span-2 lg:row-span-1 lg:col-start-2 lg:row-start-2 liquid-glass rounded-[24px] p-8 lg:p-10 flex flex-col justify-center">
+            <div className="w-full lg:w-auto lg:col-span-2 lg:row-span-1 lg:col-start-2 lg:row-start-2 liquid-glass rounded-[24px] card-hover p-8 lg:p-10 flex flex-col justify-center">
               <div className="flex items-start lg:items-center gap-4 mb-4">
                 <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                   <Wrench size={20} className="text-white" />
@@ -320,7 +320,7 @@ export default function Home() {
             </div>
 
             {/* Center Bottom (Paso 3) */}
-            <div className="w-full lg:w-auto lg:col-span-2 lg:row-span-1 lg:col-start-2 lg:row-start-3 liquid-glass rounded-[24px] p-8 lg:p-10 flex flex-col justify-center">
+            <div className="w-full lg:w-auto lg:col-span-2 lg:row-span-1 lg:col-start-2 lg:row-start-3 liquid-glass rounded-[24px] card-hover p-8 lg:p-10 flex flex-col justify-center">
               <div className="flex items-start lg:items-center gap-4 mb-4">
                 <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                   <CheckCircle size={20} className="text-white" />
@@ -333,7 +333,7 @@ export default function Home() {
             </div>
 
             {/* Right Card (Video) */}
-            <div className="w-full lg:w-auto lg:col-span-1 lg:row-span-2 lg:col-start-4 lg:row-start-2 liquid-glass rounded-[24px] overflow-hidden flex flex-col relative h-[300px] sm:h-[400px] lg:h-auto min-h-[300px]">
+            <div className="w-full lg:w-auto lg:col-span-1 lg:row-span-2 lg:col-start-4 lg:row-start-2 liquid-glass rounded-[24px] card-hover overflow-hidden flex flex-col relative h-[300px] sm:h-[400px] lg:h-auto min-h-[300px]">
               <video 
                 autoPlay 
                 loop 
@@ -356,7 +356,7 @@ export default function Home() {
             className="w-full max-w-[1600px] xl:max-w-[92vw] flex flex-col lg:grid lg:grid-cols-3 gap-4 lg:gap-6 h-auto lg:min-h-[60vh] xl:min-h-[65vh] xl:max-h-[85vh]"
           >
             {/* Left Card (Photo) */}
-            <div className="w-full lg:w-auto h-[400px] lg:h-full lg:min-h-[400px] lg:col-span-1 liquid-glass rounded-[24px] overflow-hidden relative">
+            <div className="w-full lg:w-auto h-[400px] lg:h-full lg:min-h-[400px] lg:col-span-1 liquid-glass rounded-[24px] card-hover overflow-hidden relative">
               <img 
                 src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_39uAMRdXtyPD0i1Kbmj8YAvTY0y%2Fhf_20260418_173048_8cfa5b41-6c15-4c72-8092-217aa9f2dd7d.png&w=1280&q=85" 
                 alt="Juanma López"
@@ -366,7 +366,7 @@ export default function Home() {
             </div>
 
             {/* Right Card (Text) */}
-            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] p-8 lg:px-12 lg:py-10 flex flex-col justify-center items-center text-center">
+            <div className="w-full lg:w-auto lg:col-span-2 liquid-glass rounded-[24px] card-hover p-8 lg:px-12 lg:py-10 flex flex-col justify-center items-center text-center">
               <h3 className="text-3xl sm:text-4xl xl:text-5xl font-medium mb-6">Soy Juanma López.</h3>
               
               <p className="text-[#a1a1aa] text-base lg:text-[17px] xl:text-lg leading-relaxed w-full mb-4">
@@ -404,7 +404,7 @@ export default function Home() {
             <div className="w-full flex flex-col lg:grid lg:grid-cols-[4fr_6fr] xl:grid-cols-[3.5fr_6.5fr] gap-4 lg:gap-6">
               
               {/* Left Card: Video */}
-              <div className="w-full h-[300px] sm:h-[350px] lg:h-auto liquid-glass rounded-[24px] lg:rounded-[32px] overflow-hidden relative border border-white/10">
+              <div className="w-full h-[300px] sm:h-[350px] lg:h-auto liquid-glass rounded-[24px] lg:rounded-[32px] card-hover overflow-hidden relative border border-white/10">
                 <video 
                   autoPlay 
                   loop 
@@ -417,7 +417,7 @@ export default function Home() {
               </div>
 
               {/* Right Card: Contact Form */}
-              <div className="w-full liquid-glass rounded-[24px] lg:rounded-[32px] p-6 sm:p-10 lg:p-8 xl:p-12 text-center flex flex-col items-center justify-center">
+              <div className="w-full liquid-glass rounded-[24px] lg:rounded-[32px] card-hover p-6 sm:p-10 lg:p-8 xl:p-12 text-center flex flex-col items-center justify-center">
                 <h3 className="text-3xl lg:text-4xl xl:text-[40px] font-medium mb-6 sm:mb-8 w-full xl:leading-tight">Empieza tu transformación.</h3>
                 
                 <div className="flex flex-col min-[450px]:flex-row flex-wrap justify-center items-center gap-4 lg:gap-6 w-full max-w-[600px] mx-auto">
@@ -431,7 +431,7 @@ export default function Home() {
                     Agendar reunión
                   </a>
                   <a 
-                    href="https://wa.me/34657372039" 
+                    href="https://wa.me/34600000000" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full min-[450px]:w-[270px] flex items-center justify-center gap-3 liquid-glass !bg-[#25D366]/10 !border-[#25D366]/30 rounded-full font-medium py-3.5 sm:py-4 text-white hover:scale-105 transition-transform text-center shrink-0"
@@ -458,7 +458,7 @@ export default function Home() {
             </div>
 
             {/* KIT DIGITAL */}
-            <div className="w-full liquid-glass rounded-[24px] p-6 lg:p-8 text-center mt-2 lg:mt-0">
+            <div className="w-full liquid-glass rounded-[24px] card-hover p-6 lg:p-8 text-center mt-2 lg:mt-0">
               <p className="text-[#a1a1aa] text-sm lg:text-base leading-relaxed">
                 <strong className="text-amber-400 font-medium tracking-wide">Kit Digital:</strong> Si tienes entre 0 y 49 empleados, puede que parte de esto lo cubra el Kit Digital — pregúntame y te cuento sin rodeos.
               </p>
